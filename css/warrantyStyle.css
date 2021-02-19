@@ -1,0 +1,25 @@
+p {
+    font-size: 15px;
+}
+
+.personal-title {
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.main {
+    font-family: 'Hachi Maru Pop', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-image: url("../back/main1back.png");
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#confirm {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 25%;
+}

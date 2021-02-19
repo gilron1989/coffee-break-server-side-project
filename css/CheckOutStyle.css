@@ -1,0 +1,182 @@
+main {
+    /* padding-top: 15px; */
+    padding-bottom: 20px;
+    font-family: 'Hachi Maru Pop', cursive;
+    background-color: transparent;
+    padding: 0px;
+}
+
+.checkout-title {
+    background-image: url("../back/main2back.png");
+}
+
+.scratch-section {
+    background-image: url("../back/main1back.png");
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.scratch-card {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.scratch-text {
+    font-size: 20px;
+    align-self: center;
+    width: 40%;
+    text-align: center;
+}
+
+.scratch {
+    width: 40%;
+    height: 200px;
+    border: black solid 1px;
+    border-radius: 4px;
+}
+
+.main-page {
+    background-image: url("../back/main2back.png");
+    padding-bottom: 20px;
+}
+
+.paytitle {
+    text-align: center;
+    padding: 10px 10px;
+    color: black;
+    background-image: url("../back/main2back.png");
+    font-size: 45px;
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 30px;
+}
+
+.billing-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sec-title {
+    font-size: 35px;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+label {
+    font-size: 20px;
+}
+
+#label {
+    display: block;
+}
+
+input {
+    width: 100%
+}
+
+.required {
+    color: red;
+}
+
+.cards-list {
+    font-size: 20px;
+}
+
+.checkout-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.confirm {
+    padding: 10px 10px 10px 10px;
+    border-radius: 4px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid black;
+    background-image: url("../back/main1back.png");
+    cursor: pointer;
+}
+
+#error {
+    text-align: center;
+    color: red;
+    padding: 10px 10px;
+    margin: 0px;
+    background-image: url("../back/main1back.png");
+}
+
+@media only screen and (max-width:860px) {
+    .sec-title {
+        font-size: 25px;
+    }
+    label {
+        font-size: 15px;
+    }
+    .cards-list {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:760px) {
+    .sec-title {
+        font-size: 15px;
+    }
+    .paytitle {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:540px) {
+    input {
+        width: 70%
+    }
+     ::placeholder {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:490px) {
+    input {
+        width: 70%
+    }
+    .confirm span {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:380px) {
+     ::placeholder {
+        font-size: 7px;
+    }
+    label {
+        font-size: 10px;
+    }
+    .cards-list {
+        font-size: 10px;
+    }
+    #confirm {
+        font-size: 15px;
+    }
+    .scratch-text {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:290px) {
+    .sec-title {
+        font-size: 10px;
+    }
+    #confirm {
+        font-size: 10px;
+    }
+}

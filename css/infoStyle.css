@@ -1,0 +1,50 @@
+.upper-personal-page {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    background-image: url("../back/main1back.png");
+}
+
+.personal-title {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.main-det {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 45px;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.client-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.bottom-personal-page {
+    background-image: url("../back/main2back.png");
+}
+
+.graph {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 10px 10px 10px
+}
+
+#piechart1 {
+    height: 400px;
+    background-color: transparent;
+}
+
+#piechart2 {
+    height: 400px;
+    background-color: transparent;
+}

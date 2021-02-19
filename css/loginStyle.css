@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    background-image: url("../back/main1back.png");
+}
+
+.form-popup {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.form-container {
+    width: 80%;
+    margin: auto
+}
+
+.form-container input[type=number] {
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: white;
+    display: block
+}
+
+.form-container input[type=password] {
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 5px 0;
+    border: none;
+    background: white;
+    display: block
+}
+
+.form-container input[type=text] {
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 5px 0;
+    border: none;
+    background: white;
+    display: block
+}
+
+.form-container input[type=number]:focus,
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    display: block;
+    background-color: #c9ac0c;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form-container .signup {
+    display: block;
+    background-color: hsla(39, 76%, 48%, 0.473);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form-container .cancel {
+    background-color: hsl(0, 33%, 33%);
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+.signup-popup {
+    display: none;
+    position: fixed;
+    margin: auto;
+    top: 0px;
+    left: 480px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.signup-container {
+    width: 90%;
+    padding: 10px;
+}
+
+.signup-container input[type=number] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.signup-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 5px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.signup-container input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 5px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+/* When the inputs get focus, do something */
+
+.signup-container input[type=number]:focus,
+.signup-container input[type=text]:focus,
+.signup-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+#failed {
+    display: none;
+}

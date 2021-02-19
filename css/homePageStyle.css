@@ -1,0 +1,285 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 75%;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    min-height: 192px;
+    max-height: 192px;
+    background-image: url("../back/header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.headerelem {
+    display: flex;
+    justify-content: space-between;
+    height: 192px;
+    padding-right: 5px;
+    padding-left: 20px;
+}
+
+.top-left {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.title {
+    font-family: 'Lobster', cursive;
+    font-size: 350%;
+    position: relative;
+    display: inline-block;
+}
+
+.sectitle {
+    position: relative;
+    top: -15px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30%;
+    width: 100%;
+    text-align: right;
+}
+
+.pic {
+    display: inline-block;
+    width: 30%;
+    align-self: flex-end;
+}
+
+.buttons {
+    text-align: right;
+    display: inline-block;
+    height: 20%;
+}
+
+#cart-count {
+    /* display: none; */
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    color: white;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-size: 10px;
+    z-index: 1;
+    opacity: 60%;
+}
+
+.btn-outline-secondary {
+    border: 0px;
+}
+
+#log-out {
+    display: none;
+}
+
+#login,
+#cart {
+    display: inline;
+    position: relative;
+}
+
+#hello-user {
+    display: inline;
+    cursor: default;
+}
+
+.user {
+    border-radius: 50%;
+    background-color: rgb(184, 179, 179);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+}
+
+nav {
+    min-height: 96px;
+    background-image: url("../back/menuback.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.nav .my-nav {
+    background-color: transparent;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.upper {
+    width: 100%;
+    height: 100%;
+    background-image: url("../back/main1back.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mb-3 {
+    max-width: 540px;
+    background-color: transparent;
+    height: 100%;
+}
+
+.card {
+    cursor: pointer;
+    border: none;
+    margin: 5px 5px 5px 5px;
+}
+
+.card-title {
+    font-family: 'Caveat', cursive;
+}
+
+.card-img {
+    width: 100%
+}
+
+.bottom {
+    width: 100%;
+    height: 256px;
+    background-image: url("../back/main2back.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#map {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}
+
+.footer {
+    width: 100%;
+    min-height: 128px;
+    background-image: url("../back/footerback.png");
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.foot {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.read-more {
+    display: none;
+}
+
+.zoom {
+    transition: transform 2s;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+
+.tool .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    opacity: 0.6;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 3px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.tool:hover .tooltiptext {
+    visibility: visible;
+}
+
+#active {
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+    opacity: 0.6;
+}
+
+@media screen and ( max-width: 1114px) {
+    .card-text-1 {
+        display: none;
+    }
+    .read-more {
+        display: inline;
+    }
+}
+
+@media screen and ( max-width: 925px) {
+    .card-title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    /*need to fix top-left */
+}
+
+@media screen and ( max-width: 768px) {
+    .card-img {
+        display: none;
+    }
+    .card-title {
+        font-size: 200%;
+    }
+}
+
+@media screen and ( max-width: 690px) {
+    .title {
+        font-size: 250%;
+    }
+    .sectitle {
+        font-size: 60%;
+    }
+    .pic {
+        align-self: flex-end;
+        width: 35%;
+    }
+    .log {
+        display: none;
+    }
+    .cartb {
+        display: none;
+    }
+    body {
+        width: 100%
+    }
+}
+
+@media screen and ( max-width: 521px) {
+    .card-title {
+        font-size: 20px;
+    }
+}
+
+@media screen and ( max-width: 394px) {
+    .title {
+        font-size: 200%;
+    }
+    .pic {
+        align-content: flex-end;
+    }
+}
+
+@media screen and ( max-width: 358px) {
+    .text-muted {
+        display: none;
+    }
+}
